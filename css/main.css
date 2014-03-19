@@ -22,33 +22,86 @@ html, body{
 	background: #FFFFFF;
 }
 
+svg{
+  border:solid pink;
+}
+
+.bubbles{
+   stroke: #292B25;
+}
+
 #tooltip {
-          position: absolute;
-          width: 200px;
-          height: auto;
-          padding: 10px;
-          background-color: white;
-          -webkit-border-radius: 10px;
-          -moz-border-radius: 10px;
-          border-radius: 10px;
-          -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-          -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-          pointer-events: none;
-        }
-        
-/*        #tooltip.hidden {
-          display: none;
-        }*/
-        
-        #tooltip p {
-          margin: 0;
-          font-family: sans-serif;
-          font-size: 16px;
-          line-height: 20px;
-        }
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  background-color: white;
+  -moz-opacity: 0.90;
+  opacity:.90;
+  filter: alpha(opacity=90);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+#tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  color: black;
+}
+
+div #legend ul{
+  list-style: none;
+  width: auto;
 
 
+}
+
+div #legend ul li{
+  height: 20px;
+  display: inline-block;
+  font-size: 10px;
+  float: left;
+  margin-right: 4px;
+
+}
+
+.legend_text{
+  padding-top: 4px;
+  width: auto;
+}
+.legend_color1{
+  width: 20px;
+  background: #97BF3F;
+  border:2px solid #292B25;
+}
+.legend_color2{
+   width: 20px;
+  background: #F2ECD8;
+  border:2px solid #292B25;
+}
+
+.legend_color3{
+   width: 20px;
+  background: #FF4500;
+  border:2px solid #292B25;
+}
+
+#buttons h1{
+  clear: both;
+  float: left;
+  cursor: pointer;
+}
 
 
 
@@ -56,26 +109,26 @@ html, body{
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-/* Styles */
+  /* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
-/* Styles */
+  /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-/* Styles */
+  /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-/* Styles */
+  /* Styles */
 }
 
 /* iPads (landscape) ----------- */
@@ -83,7 +136,7 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-/* Styles */
+  /* Styles */
 }
 
 /* iPads (portrait) ----------- */
@@ -91,24 +144,24 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
-/* Styles */
+  /* Styles */
 }
 
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
-/* Styles */
+  /* Styles */
 }
 
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
-/* Styles */
+  /* Styles */
 }
 
 /* iPhone 4 ----------- */
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
+  /* Styles */
 }

@@ -221,7 +221,7 @@
   },
   {
     "price":4000,
-    "detail":"60 year old, black male slave  ",
+    "detail":"60 year old, black male slave",
     "context":"US",
     "region":"americas",
     "date":"1850",
@@ -241,7 +241,7 @@
   },
   {
     "price":11000,
-    "detail":"40 & 20 year old, black male slave  ",
+    "detail":"40 & 20 year old, black male slave",
     "context":"US",
     "region":"americas",
     "date":"1850",
@@ -251,7 +251,7 @@
   },
   {
     "price":19000,
-    "detail":"35 year old, black male slave  ",
+    "detail":"35 year old, black male slave",
     "context":"US",
     "region":"americas",
     "date":"1850",
@@ -261,7 +261,7 @@
   },
   {
     "price":22000,
-    "detail":"25 year old, black male slave  ",
+    "detail":"25 year old, black male slave",
     "context":"US",
     "region":"americas",
     "date":"1850",
@@ -292,7 +292,7 @@
   {
     "price":6400,
     "detail":"Baby from Nigeria",
-    "context":"Nigeria ",
+    "context":"Nigeria",
     "region":"africa",
     "date":"2011",
     "decades":"present",
@@ -336,7 +336,7 @@
     "region":"asia",
     "date":"2013",
     "decades":"present",
-    "gender":"both ",
+    "gender":"both",
     "age":"ns"
   },
   {
@@ -346,7 +346,7 @@
     "region":"asia",
     "date":"2013",
     "decades":"present",
-    "gender":"both ",
+    "gender":"both",
     "age":"ns"
   },
   {
@@ -406,7 +406,7 @@
     "region":"europe",
     "date":"2010",
     "decades":"present",
-    "gender":"female ",
+    "gender":"female",
     "age":"child"
   },
   {
