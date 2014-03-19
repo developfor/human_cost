@@ -3,7 +3,7 @@
 	var dataVisualisation = function(){
 
 		var margin = {top: 4, right: 5, bottom: 4, left: 5},
-    pad = {top: 12, right: 12, bottom: 12, left: 12},
+    pad = {top: 42, right: 12, bottom: 12, left: 4},
     width = 670 - margin.left - margin.right,
     height = 320 - margin.top - margin.bottom,
     padding = 0;
@@ -17,6 +17,11 @@
     .attr('class', 'svg')
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+
+
     
     function colorScale(data){
 
@@ -70,9 +75,26 @@
 
   }
 
-
-
   function makeBubble(nodes){
+
+        var xG = d3.scale.ordinal()
+          .domain(data.map(function(d) { return d.gender; }))
+          .range([120, 320, 550]);
+
+          var xA = d3.scale.ordinal()
+          .domain(data.map(function(d) { return d.age; }))
+          .range([20, 180, 360, 630]);
+
+
+      var xAxisG = d3.svg.axis()
+      .scale(xG)
+      .orient("bottom")
+      .ticks(5);
+
+      var xAxisA = d3.svg.axis()
+      .scale(xA)
+      .orient("bottom")
+      .ticks(5);
 
     // var force = d3.layout.force()
     // .stop()
@@ -91,19 +113,33 @@
     circle.enter().append("circle");
 
     circle.attr("r", function(d) {return d.radius; })
-    .style("fill", function(d){ return d.color; })
-    .style("stroke-width", '1.5')
-    // .style("stroke", "#292B25")
-    // .attr("id", function(d) { return d.code; })
-    .attr('class', 'bubbles')
-    .call(force.drag);
+      .style("fill", function(d){ return d.color; })
+      .attr('class', 'bubbles')
+      .call(force.drag);
+
+
+    svg.append("g")
+      .data(nodes)
+      .attr("class", "x axis axisGender")
+      .attr("transform", "translate(0, 280)")
+      // .attr("transform", "translate(0," + height + ")")
+      .call(xAxisG);
+      // .append("text")
+
+      svg.append("g")
+      .data(nodes)
+      .attr("class", "x axis axisAge")
+      .attr("transform", "translate(0, 280)")
+      // .attr("transform", "translate(0," + height + ")")
+      .call(xAxisA);
+      // .append("text")
 
     function tick(e) {
       circle
-      .each(gravity(0.2 * e.alpha))
-      .each(collide(0.5, nodes))
-      .attr("cx", function(d) { return d.x = Math.max(d.radius, Math.min(width - d.radius, d.x)); }) //Bubbles can't go outside bounding box
-      .attr("cy", function(d) { return d.y = Math.max(d.radius, Math.min(height - d.radius, d.y)); }); //Bubbles can't go outside bounding box
+        .each(gravity(0.2 * e.alpha))
+        .each(collide(0.5, nodes))
+        .attr("cx", function(d) { return d.x = Math.max(d.radius, Math.min(width - d.radius, d.x)); }) //Bubbles can't go outside bounding box
+        .attr("cy", function(d) { return d.y = Math.max(d.radius, Math.min((height - 25) - d.radius, d.y)); }); //Bubbles can't go outside bounding box
     }
 
     function forceNodes(nodes){
@@ -119,6 +155,8 @@
 
 
   $( "#sort" ).on( "click", function() {
+          $('.axisGender').hide();
+      $('.axisAge').hide();
     for(var i = 0; i < nodes.length; i++){
       nodes[i].cx = 330;
     }
@@ -127,7 +165,9 @@
   });
 
     $( "#sort_age" ).on( "click", function() {
-      console.log("in")
+      $('.axisGender').hide();
+      $('.axisAge').show();
+
     for(var i = 0; i < nodes.length; i++){
       if (nodes[i].age === 'baby'){
         nodes[i].cx = 20;
@@ -145,13 +185,15 @@
   });
 
     $( "#sort_gender" ).on( "click", function() {
-      console.log("in")
+            $('.axisGender').show();
+      $('.axisAge').hide();
+     
     for(var i = 0; i < nodes.length; i++){
-      if (nodes[i].gender === 'male'){
+      if (nodes[i].gender === 'both'){
         nodes[i].cx = 120;
       } else if (nodes[i].gender === 'female'){
         nodes[i].cx = 320;
-      }else if (nodes[i].gender === 'both'){
+      }else if (nodes[i].gender === 'male'){
         nodes[i].cx = 550;
       }
     }
@@ -160,15 +202,9 @@
       circle.call(force.drag);
   });
 
-
-
     circle.exit().remove();
 
 }//END OF MAKE BUBBLE
-
-
-
-
 
 
 // function createList(d){
@@ -213,7 +249,7 @@ function goOver(nodes){
             // .style("left", xPosition + "px")
             // .style("top", yPosition + "px")  
             .style("left", pad.left + "px")
-            .style("top", height - pad.bottom - pad.top + "px")    
+            .style("top", pad.top + "px")    
             .select("#value")
             .text(d.price);
             d3.select("#detail")
@@ -228,9 +264,6 @@ function goOver(nodes){
             .text(d.gender);         
             //Show the tooltip
             d3.select("#tooltip").classed("hidden", false);
-
-
-
 
     // var lists = createList(d);
     // $("#country-info ul").html(lists).show();
