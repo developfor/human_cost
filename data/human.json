@@ -1,16 +1,16 @@
 [
   {
     "price":4480,
-    "detail":"slave - very young child, Ancient Egypt",
+    "detail":"Slave - very young child, Ancient Egypt",
     "region":"africa",
     "date":"-500",
     "decades":"bce",
-    "gender":"both",
+    "gender":"female & male",
     "age":"baby"
   },
   {
     "price":20480,
-    "detail":"slave - 8 years old, Ancient Egypt ",
+    "detail":"Slave - 8 years old, Ancient Egypt ",
     "region":"africa",
     "date":"-500",
     "decades":"bce",
@@ -19,7 +19,7 @@
   },
   {
     "price":32000,
-    "detail":"slave, Ancient Egypt",
+    "detail":"Slave, Ancient Egypt",
     "region":"africa",
     "date":"-500",
     "decades":"bce",
@@ -33,11 +33,11 @@
     "date":"0",
     "decades":"bce",
     "gender":"male",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":6000,
-    "detail":"slave, Ancient Rome",
+    "detail":"Slave, Ancient Rome",
     "region":"africa",
     "date":"0",
     "decades":"bce",
@@ -46,7 +46,7 @@
   },
   {
     "price":12000,
-    "detail":"slave, Ancient Rome",
+    "detail":"Slave, Ancient Rome",
     "region":"africa",
     "date":"0",
     "decades":"bce",
@@ -55,7 +55,7 @@
   },
   {
     "price":24000,
-    "detail":"slave, Ancient Rome",
+    "detail":"Slave, Ancient Rome",
     "region":"africa",
     "date":"0",
     "decades":"bce",
@@ -64,25 +64,25 @@
   },
   {
     "price":1200,
-    "detail":"Afghanistan Civilian death - Australian Military",
+    "detail":"Afghanistan civilian death - Australian military",
     "region":"oceania",
     "date":"2011 - 2013",
     "decades":"present",
-    "gender":"both",
-    "age":"ns"
+    "gender":"female & male",
+    "age":"unstated"
   },
   {
     "price":1300,
-    "detail":"Male Irish Slave, Caribbean",
+    "detail":"Male Irish slave, Caribbean",
     "region":"caribbean",
     "date":"1650",
     "decades":"early_modern",
     "gender":"male",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":9000,
-    "detail":"Female African Slave - child, Caribbean",
+    "detail":"Female African slave - child, Caribbean",
     "region":"caribbean",
     "date":"1650",
     "decades":"early_modern",
@@ -100,7 +100,7 @@
   },
   {
     "price":10000,
-    "detail":"African Slave, Caribbean",
+    "detail":"African slave, Caribbean",
     "region":"caribbean",
     "date":"1650",
     "decades":"early_modern",
@@ -118,57 +118,57 @@
   },
   {
     "price":880,
-    "detail":"Blood money in Saudi Arabia, for female Athiest or other religeon",
+    "detail":"Blood money in Saudi Arabia, for female Atheist or other religion",
     "region":"middle_east",
-    "date":"Not Specified",
-    "decades":"ns",
+    "date":"unstated",
+    "decades":"unstated",
     "gender":"female",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":1750,
-    "detail":"Blood money in Saudi Arabia, for male Athiest or other religeon",
+    "detail":"Blood money in Saudi Arabia, for male Atheist or other religion",
     "region":"middle_east",
-    "date":"Not Specified",
-    "decades":"ns",
+    "date":"unstated",
+    "decades":"unstated",
     "gender":"male",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":8800,
     "detail":"Blood money in Saudi Arabia, for female Christian or Jew",
     "region":"middle_east",
-    "date":"Not Specified",
-    "decades":"ns",
+    "date":"unstated",
+    "decades":"unstated",
     "gender":"female",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":13500,
     "detail":"Blood money in Saudi Arabia, for female Muslim",
     "region":"middle_east",
-    "date":"Not Specified",
-    "decades":"ns",
+    "date":"unstated",
+    "decades":"unstated",
     "gender":"female",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":13500,
     "detail":"Blood money in Saudi Arabia, for male Christian or Jew",
     "region":"middle_east",
-    "date":"Not Specified",
-    "decades":"ns",
+    "date":"unstated",
+    "decades":"unstated",
     "gender":"male",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":27000,
     "detail":"Blood money in Saudi Arabia, for male Muslim",
     "region":"middle_east",
-    "date":"Not Specified",
-    "decades":"ns",
+    "date":"unstated",
+    "decades":"unstated",
     "gender":"male",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":2000,
@@ -176,8 +176,8 @@
     "region":"europe",
     "date":"2011 - 2013",
     "decades":"present",
-    "gender":"both",
-    "age":"ns"
+    "gender":"female & male",
+    "age":"unstated"
   },
   {
     "price":8000,
@@ -185,8 +185,8 @@
     "region":"europe",
     "date":"2011 - 2013",
     "decades":"present",
-    "gender":"both",
-    "age":"ns"
+    "gender":"female & male",
+    "age":"unstated"
   },
   {
     "price":38000,
@@ -194,8 +194,8 @@
     "region":"europe",
     "date":"2011 - 2013",
     "decades":"present",
-    "gender":"both",
-    "age":"ns"
+    "gender":"female & male",
+    "age":"unstated"
   },
   {
     "price":4000,
@@ -244,12 +244,12 @@
   },
   {
     "price":30000,
-    "detail":"Prime Male Slave - New Orleans, United States",
+    "detail":"Prime Male Slave - New New Orleans, United States",
     "region":"americas",
     "date":"1855",
     "decades":"eighteen",
     "gender":"male",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":100000,
@@ -257,7 +257,7 @@
     "region":"americas",
     "date":"2011 - 2013",
     "decades":"present",
-    "gender":"both",
+    "gender":"female & male",
     "age":"adult"
   },
   {
@@ -266,7 +266,7 @@
     "region":"africa",
     "date":"2011",
     "decades":"present",
-    "gender":"both",
+    "gender":"female & male",
     "age":"baby"
   },
   {
@@ -302,8 +302,8 @@
     "region":"asia",
     "date":"2013",
     "decades":"present",
-    "gender":"both",
-    "age":"ns"
+    "gender":"female & male",
+    "age":"unstated"
   },
   {
     "price":45000,
@@ -311,8 +311,8 @@
     "region":"asia",
     "date":"2013",
     "decades":"present",
-    "gender":"both",
-    "age":"ns"
+    "gender":"female & male",
+    "age":"unstated"
   },
   {
     "price":45,
@@ -320,7 +320,7 @@
     "region":"asia",
     "date":"2007",
     "decades":"present",
-    "gender":"both",
+    "gender":"female & male",
     "age":"child"
   },
   {
@@ -329,7 +329,7 @@
     "region":"middle_east",
     "date":"2009",
     "decades":"present",
-    "gender":"both",
+    "gender":"female & male",
     "age":"child"
   },
   {
@@ -338,7 +338,7 @@
     "region":"middle_east",
     "date":"2009",
     "decades":"present",
-    "gender":"both",
+    "gender":"female & male",
     "age":"child"
   },
   {
@@ -347,7 +347,7 @@
     "region":"africa",
     "date":"2012",
     "decades":"present",
-    "gender":"male",
+    "gender":"female & male",
     "age":"child"
   },
   {
@@ -356,12 +356,12 @@
     "region":"europe",
     "date":"2011",
     "decades":"present",
-    "gender":"both",
+    "gender":"female & male",
     "age":"child"
   },
   {
     "price":6000,
-    "detail":"Romanian girl sold into prostitution, Western Europe maximum - Romania",
+    "detail":"Romanian girl sold into prostitution, Western Europe maximum amount",
     "region":"europe",
     "date":"2010",
     "decades":"present",
@@ -374,8 +374,8 @@
     "region":"americas",
     "date":"2013",
     "decades":"present",
-    "gender":"both",
-    "age":"ns"
+    "gender":"female & male",
+    "age":"unstated"
   },
   {
     "price":7300,
@@ -384,7 +384,7 @@
     "date":"2010",
     "decades":"present",
     "gender":"female",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":40000,
@@ -406,7 +406,7 @@
   },
   {
     "price":1066,
-    "detail":"Woman in her 20s - North Korea",
+    "detail":"Woman in her 20's - North Korea",
     "region":"asia",
     "date":"2011",
     "decades":"present",
@@ -415,7 +415,7 @@
   },
   {
     "price":761,
-    "detail":"Woman in her 30s - North Korea",
+    "detail":"Woman in her 30's - North Korea",
     "region":"asia",
     "date":"2011",
     "decades":"present",
@@ -424,7 +424,7 @@
   },
   {
     "price":457,
-    "detail":"Woman in her 40s - North Korea",
+    "detail":"Woman in her 40's - North Korea",
     "region":"asia",
     "date":"2011",
     "decades":"present",
@@ -446,25 +446,25 @@
     "region":"asia",
     "date":"2011",
     "decades":"present",
-    "gender":"both",
-    "age":"ns"
+    "gender":"female & male",
+    "age":"unstated"
   },
   {
     "price":200,
-    "detail":"temporary \"pleasure marriage\" to a Syrian refugee - Syria",
+    "detail":"Temporary \"pleasure marriage\" to a Syrian refugee - Syria",
     "region":"middle_east",
     "date":"2012",
     "decades":"present",
     "gender":"female",
-    "age":"ns"
+    "age":"unstated"
   },
   {
     "price":110,
-    "detail":"cost of freedom from forced cotton labour - Uzbekistan",
+    "detail":"Cost of freedom from forced cotton labour - Uzbekistan",
     "region":"asia",
     "date":"2012",
     "decades":"present",
-    "gender":"both",
-    "age":"ns"
+    "gender":"female & male",
+    "age":"unstated"
   }
 ]

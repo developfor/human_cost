@@ -21,7 +21,7 @@
     function colorScale(data){
 
       return d3.scale.ordinal()
-      .domain(["male", "female", "both"])
+      .domain(["male", "female", "female & male"])
       .range(["#97BF3F", "#F2ECD8", "#FF4500"]);
     }
 
@@ -73,8 +73,8 @@
   function makeBubble(nodes){
 
     var arrayGender = [["female & male",120], ["female", 320], ["male", 550]],
-    arrayDate = [["not specified", 40], ["-500 - 0", 145], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
-    arrayAge = [["baby", 30], ["child", 155],["adult", 345],["not specified", 610]];
+    arrayDate = [["unstated", 40], ["-500 - 0", 145], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
+    arrayAge = [["baby", 30], ["child", 155],["adult", 345],["unstated", 610]];
 
     var xG = d3.scale.ordinal()
     .domain([arrayGender[0][0], arrayGender[1][0], arrayGender[2][0]])
@@ -182,7 +182,7 @@
             nodes[i].cx = arrayAge[1][1];
           }else if (nodes[i].age === 'adult'){
             nodes[i].cx = arrayAge[2][1];
-          }else if (nodes[i].age === 'ns'){
+          }else if (nodes[i].age === 'unstated'){
             nodes[i].cx = arrayAge[3][1];
           }
         }
@@ -199,7 +199,7 @@
         $('.axisGender').show();
 
         for(var i = 0; i < nodes.length; i++){
-          if (nodes[i].gender === 'both'){
+          if (nodes[i].gender === 'female & male'){
             nodes[i].cx = arrayGender[0][1];
           } else if (nodes[i].gender === 'female'){
             nodes[i].cx = arrayGender[1][1];
@@ -219,7 +219,7 @@
       $('.axisDate').show();
 
       for(var i = 0; i < nodes.length; i++){
-        if (nodes[i].decades === 'ns'){
+        if (nodes[i].decades === 'unstated'){
           nodes[i].cx = arrayDate[0][1];
         } else if (nodes[i].decades === 'bce'){
           nodes[i].cx = arrayDate[1][1];
