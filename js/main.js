@@ -18,11 +18,6 @@
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-
-
-
-
-    
     function colorScale(data){
 
       return d3.scale.ordinal()
@@ -77,39 +72,39 @@
 
   function makeBubble(nodes){
 
-    var arrayGender = [["both",120], ["female", 320], ["male", 550]],
+    var arrayGender = [["female & male",120], ["female", 320], ["male", 550]],
     arrayDate = [["not specified", 40], ["-500 - 0", 145], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
     arrayAge = [["baby", 30], ["child", 155],["adult", 345],["not specified", 610]];
 
-        var xG = d3.scale.ordinal()
-          .domain([arrayGender[0][0], arrayGender[1][0], arrayGender[2][0]])
-          .range([arrayGender[0][1], arrayGender[1][1], arrayGender[2][1]]);
+    var xG = d3.scale.ordinal()
+    .domain([arrayGender[0][0], arrayGender[1][0], arrayGender[2][0]])
+    .range([arrayGender[0][1], arrayGender[1][1], arrayGender[2][1]]);
 
 
-          var xA = d3.scale.ordinal()
-          .domain([arrayAge[0][0], arrayAge[1][0], arrayAge[2][0], arrayAge[3][0]])
-          .range([arrayAge[0][1], arrayAge[1][1], arrayAge[2][1], arrayAge[3][1]]);
+    var xA = d3.scale.ordinal()
+    .domain([arrayAge[0][0], arrayAge[1][0], arrayAge[2][0], arrayAge[3][0]])
+    .range([arrayAge[0][1], arrayAge[1][1], arrayAge[2][1], arrayAge[3][1]]);
 
 
-          var xD = d3.scale.ordinal()
-          .domain([arrayDate[0][0], arrayDate[1][0], arrayDate[2][0], arrayDate[3][0], arrayDate[4][0]])
-          .range([arrayDate[0][1], arrayDate[1][1], arrayDate[2][1], arrayDate[3][1], arrayDate[4][1]]);
+    var xD = d3.scale.ordinal()
+    .domain([arrayDate[0][0], arrayDate[1][0], arrayDate[2][0], arrayDate[3][0], arrayDate[4][0]])
+    .range([arrayDate[0][1], arrayDate[1][1], arrayDate[2][1], arrayDate[3][1], arrayDate[4][1]]);
 
 
-      var xAxisG = d3.svg.axis()
-      .scale(xG)
-      .orient("bottom")
-      .ticks(5);
+    var xAxisG = d3.svg.axis()
+    .scale(xG)
+    .orient("bottom")
+    .ticks(5);
 
-      var xAxisA = d3.svg.axis()
-      .scale(xA)
-      .orient("bottom")
-      .ticks(5);
+    var xAxisA = d3.svg.axis()
+    .scale(xA)
+    .orient("bottom")
+    .ticks(5);
 
-      var xAxisD = d3.svg.axis()
-      .scale(xD)
-      .orient("bottom")
-      .ticks(5);
+    var xAxisD = d3.svg.axis()
+    .scale(xD)
+    .orient("bottom")
+    .ticks(5);
 
     var force = forceNodes(nodes);
 
@@ -119,175 +114,134 @@
     circle.enter().append("circle");
 
     circle.attr("r", function(d) {return d.radius; })
-      .style("fill", function(d){ return d.color; })
-      .attr('class', 'bubbles')
-      .call(force.drag);
+    .style("fill", function(d){ return d.color; })
+    .attr('class', 'bubbles')
+    .call(force.drag);
 
-
+    //append date GENDER, add class axis data and move to the bottom of viz
     svg.append("g")
-      // .data(currentPicked)
       .attr("class", "x axis axisGender")
       .attr("transform", "translate(0, 280)")
-      // .attr("transform", "translate(0," + height + ")")
       .call(xAxisG);
-      // .append("text")
 
+      //append AGE axis, add class axis data and move to the bottom of viz
       svg.append("g")
-      // .data(nodes)
       .attr("class", "x axis axisAge")
       .attr("transform", "translate(0, 280)")
-      // .attr("transform", "translate(0," + height + ")")
       .call(xAxisA);
-      // .append("text")
 
-svg.append("g")
-      // .data(nodes)
+      //append DATE axis, add class axis data and move to the bottom of viz
+      svg.append("g")
       .attr("class", "x axis axisDate")
       .attr("transform", "translate(0, 280)")
-      // .attr("transform", "translate(0," + height + ")")
       .call(xAxisD);
-      // .append("text")
 
-    function tick(e) {
-      circle
+      function tick(e) {
+        circle
         .each(gravity(0.2 * e.alpha))
         .each(collide(0.5, nodes))
         .attr("cx", function(d) { return d.x = Math.max(d.radius, Math.min(width - d.radius, d.x)); }) //Bubbles can't go outside bounding box
         .attr("cy", function(d) { return d.y = Math.max(d.radius, Math.min((height - 25) - d.radius, d.y)); }); //Bubbles can't go outside bounding box
-    }
+      }
 
-    function forceNodes(nodes){
-      return d3.layout.force()
-      .stop()
-      .nodes(nodes)
-      .size([width, height])
-      .friction(0.8)
-      .gravity(0)
-      .charge(-10)
-      .on("tick", tick)
-      .start();
-    }
+      function forceNodes(nodes){
+        return d3.layout.force()
+        .stop()
+        .nodes(nodes)
+        .size([width, height])
+        .friction(0.8)
+        .gravity(0)
+        .charge(-10)
+        .on("tick", tick)
+        .start();
+      }
 
-
-
-  $( "#sort" ).on( "click", function() {
-          $('.axisGender').hide();
-      $('.axisAge').hide();
-       $('.axisDate').hide();
-    for(var i = 0; i < nodes.length; i++){
-      nodes[i].cx = 330;
-    }
-    var force = forceNodes(nodes);
-      circle.call(force.drag);
-  });
-
-    $( "#sort_age" ).on( "click", function() {
+      //bubbles are not sorted
+      $( "#sort" ).on( "click", function() {
         $('.axisGender').hide();
-        $('.axisAge').show();
+        $('.axisAge').hide();
         $('.axisDate').hide();
+        for(var i = 0; i < nodes.length; i++){
+          nodes[i].cx = 330;
+        }
+        var force = forceNodes(nodes);
+        circle.call(force.drag);
+      });
 
-    for(var i = 0; i < nodes.length; i++){
-      if (nodes[i].age === 'baby'){
-        nodes[i].cx = arrayAge[0][1];
-      } else if (nodes[i].age === 'child'){
-        nodes[i].cx = arrayAge[1][1];
-      }else if (nodes[i].age === 'adult'){
-        nodes[i].cx = arrayAge[2][1];
-      }else if (nodes[i].age === 'ns'){
-        nodes[i].cx = arrayAge[3][1];
-      }
-    }
-   var force = forceNodes(nodes);
+      //sort bubbles by AGE
+      $( "#sort_age" ).on( "click", function() {
+        
+        $('.axisGender').hide();
+        $('.axisDate').hide();
+        $('.axisAge').show();
 
-      circle.call(force.drag);
-  });
+        for(var i = 0; i < nodes.length; i++){
+          if (nodes[i].age === 'baby'){
+            nodes[i].cx = arrayAge[0][1];
+          } else if (nodes[i].age === 'child'){
+            nodes[i].cx = arrayAge[1][1];
+          }else if (nodes[i].age === 'adult'){
+            nodes[i].cx = arrayAge[2][1];
+          }else if (nodes[i].age === 'ns'){
+            nodes[i].cx = arrayAge[3][1];
+          }
+        }
+        var force = forceNodes(nodes);
 
+        circle.call(force.drag);
+      });
 
+      //sort bubbles by GENDER
+      $( "#sort_gender" ).on( "click", function() {
+        
+        $('.axisAge').hide();
+        $('.axisDate').hide();
+        $('.axisGender').show();
 
+        for(var i = 0; i < nodes.length; i++){
+          if (nodes[i].gender === 'both'){
+            nodes[i].cx = arrayGender[0][1];
+          } else if (nodes[i].gender === 'female'){
+            nodes[i].cx = arrayGender[1][1];
+          }else if (nodes[i].gender === 'male'){
+            nodes[i].cx = arrayGender[2][1];
+          }
+        }
+        var force = forceNodes(nodes);
 
+        circle.call(force.drag);
+      });
 
-    $( "#sort_gender" ).on( "click", function() {
-            $('.axisGender').show();
-      $('.axisAge').hide();
-       $('.axisDate').hide();
-     
-    for(var i = 0; i < nodes.length; i++){
-      if (nodes[i].gender === 'both'){
-        nodes[i].cx = arrayGender[0][1];
-      } else if (nodes[i].gender === 'female'){
-        nodes[i].cx = arrayGender[1][1];
-      }else if (nodes[i].gender === 'male'){
-        nodes[i].cx = arrayGender[2][1];
-      }
-    }
-   var force = forceNodes(nodes);
-
-      circle.call(force.drag);
-  });
-
-
-    // var arrayGender = [["both",120], ["female", 320], ["male", 550]],
-    // arrayDate = [["not specified", 40], ["-500 - 0", 140], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
-    // arrayAge = [["baby", 20], ["child", 180],["adult", 360],["not specified", 630]];
-
-      $( "#sort_date" ).on( "click", function() {
-            $('.axisGender').hide();
+    //bubbles are sorted by DATE
+    $( "#sort_date" ).on( "click", function() {
+      $('.axisGender').hide();
       $('.axisAge').hide();
       $('.axisDate').show();
-     
-    for(var i = 0; i < nodes.length; i++){
-      if (nodes[i].decades === 'ns'){
-        nodes[i].cx = arrayDate[0][1];
-      } else if (nodes[i].decades === 'bce'){
-        nodes[i].cx = arrayDate[1][1];
-      } else if (nodes[i].decades === 'early_modern'){
-        nodes[i].cx = arrayDate[2][1];
-      }else if (nodes[i].decades === 'eighteen'){
-        nodes[i].cx = arrayDate[3][1];
-      }else if (nodes[i].decades === 'present'){
-        nodes[i].cx = arrayDate[4][1];
+
+      for(var i = 0; i < nodes.length; i++){
+        if (nodes[i].decades === 'ns'){
+          nodes[i].cx = arrayDate[0][1];
+        } else if (nodes[i].decades === 'bce'){
+          nodes[i].cx = arrayDate[1][1];
+        } else if (nodes[i].decades === 'early_modern'){
+          nodes[i].cx = arrayDate[2][1];
+        }else if (nodes[i].decades === 'eighteen'){
+          nodes[i].cx = arrayDate[3][1];
+        }else if (nodes[i].decades === 'present'){
+          nodes[i].cx = arrayDate[4][1];
+        }
       }
-    }
-   var force = forceNodes(nodes);
+      var force = forceNodes(nodes);
 
       circle.call(force.drag);
-  });
+    });
 
     circle.exit().remove();
 
 }//END OF MAKE BUBBLE
 
-
-// function createList(d){
-
-//   var lists = $('<li></li>');
-//   lists.empty();
-
-//    var listLabels = [["Price", "price"],
-//   ["Detail","detail"],
-//   ["Date", "date"]];
-
-//   listLabels.forEach(function(entry){
-
-
-
-//     var  col1 = $('<span></span>').addClass('label').text(entry[0] + ": ");
-//     var col2 = $('<span></span>').addClass('item-info').text(d[entry[1]]).append('<br />');
-//     col1.append(col2);
-//     lists.append(col1);
-
-
-//   })
-
-//   var col3 = $('<span></span>').addClass('item-star').text("All Prices are in U.S. Dollars and adjusted for inflation").append('<br />');
-//   lists.append(col3);
-
-//   return lists;
-// }
-
-
 function goOver(nodes){
- 
+
   d3.selectAll("circle")
   .on("mouseover", function(d) {
 
@@ -295,40 +249,36 @@ function goOver(nodes){
     var xPosition = parseFloat(d.px);
     var yPosition = parseFloat(d.py);
 
-            //Update the tooltip position and value
-            d3.select("#tooltip")
-            // .style("left", xPosition + "px")
-            // .style("top", yPosition + "px")  
-            .style("left", pad.left + "px")
-            .style("top", pad.top + "px")    
-            .select("#value")
-            .text(d.price);
-            d3.select("#detail")
-            .text(d.detail);    
-            d3.select("#age")
-            .text(d.age); 
-            d3.select("#date")
-            .text(d.date);   
-            d3.select("#gender")
-            .text(d.gender);         
-            //Show the tooltip
-            d3.select("#tooltip").classed("hidden", false);
 
-    // var lists = createList(d);
-    // $("#country-info ul").html(lists).show();
+
+    //Update the tooltip position and value
+    d3.select("#tooltip")
+     .style("left", pad.left + "px")
+    .style("top", pad.top + "px")    
+    .select("#value")
+    .text(numberWithCommas(d.price));
+    d3.select("#detail")
+    .text(d.detail);    
+    d3.select("#age")
+    .text(d.age); 
+    d3.select("#date")
+    .text(d.date);   
+    d3.select("#gender")
+    .text(d.gender); 
+
+    //Show the tooltip
+    d3.select("#tooltip").classed("hidden", false);
     
     d3.select(this)
     .style("stroke-width", '4')
     .style("stroke", "#292B25");
 
   })
-  .on("mouseout", function() {
+.on("mouseout", function() {
 
-    d3.select("#tooltip").classed("hidden", true);
-    d3.select(this)
-    .style("stroke-width", "1.5");
-
-    // $('#country-info ul').hide();
+  d3.select("#tooltip").classed("hidden", true);
+  d3.select(this)
+  .style("stroke-width", "1.5");
   });
 }
 

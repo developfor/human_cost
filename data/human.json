@@ -66,7 +66,7 @@
     "price":1200,
     "detail":"Afghanistan Civilian death - Australian Military",
     "region":"oceania",
-    "date":"2011-2013",
+    "date":"2011 - 2013",
     "decades":"present",
     "gender":"both",
     "age":"ns"
@@ -129,7 +129,7 @@
     "price":1750,
     "detail":"Blood money in Saudi Arabia, for male Athiest or other religeon",
     "region":"middle_east",
-    "date":"saudi",
+    "date":"Not Specified",
     "decades":"ns",
     "gender":"male",
     "age":"ns"
@@ -138,7 +138,7 @@
     "price":8800,
     "detail":"Blood money in Saudi Arabia, for female Christian or Jew",
     "region":"middle_east",
-    "date":"saudi",
+    "date":"Not Specified",
     "decades":"ns",
     "gender":"female",
     "age":"ns"
@@ -147,7 +147,7 @@
     "price":13500,
     "detail":"Blood money in Saudi Arabia, for female Muslim",
     "region":"middle_east",
-    "date":"saudi",
+    "date":"Not Specified",
     "decades":"ns",
     "gender":"female",
     "age":"ns"
@@ -156,7 +156,7 @@
     "price":13500,
     "detail":"Blood money in Saudi Arabia, for male Christian or Jew",
     "region":"middle_east",
-    "date":"saudi",
+    "date":"Not Specified",
     "decades":"ns",
     "gender":"male",
     "age":"ns"
@@ -165,7 +165,7 @@
     "price":27000,
     "detail":"Blood money in Saudi Arabia, for male Muslim",
     "region":"middle_east",
-    "date":"saudi",
+    "date":"Not Specified",
     "decades":"ns",
     "gender":"male",
     "age":"ns"
@@ -174,7 +174,7 @@
     "price":2000,
     "detail":"Afghanistan Civilian death (on average) - UK Military",
     "region":"europe",
-    "date":"2011-2013",
+    "date":"2011 - 2013",
     "decades":"present",
     "gender":"both",
     "age":"ns"
@@ -183,16 +183,16 @@
     "price":8000,
     "detail":"Afghanistan Civilian death (highest paid) - UK Military",
     "region":"europe",
-    "date":"2011-2013",
+    "date":"2011 - 2013",
     "decades":"present",
     "gender":"both",
     "age":"ns"
   },
   {
     "price":38000,
-    "detail":"UK Military Personnel - UK Military",
+    "detail":"UK Military Personnel death - UK Military",
     "region":"europe",
-    "date":"2011-2013",
+    "date":"2011 - 2013",
     "decades":"present",
     "gender":"both",
     "age":"ns"
@@ -253,9 +253,9 @@
   },
   {
     "price":100000,
-    "detail":"US Military Personnel - United States military",
+    "detail":"US Military Personnel who die on active duty - United States military",
     "region":"americas",
-    "date":"2011-2013",
+    "date":"2011 - 2013",
     "decades":"present",
     "gender":"both",
     "age":"adult"
@@ -352,7 +352,7 @@
   },
   {
     "price":25000,
-    "detail":"Child - UK",
+    "detail":"Smuggled Child - UK",
     "region":"europe",
     "date":"2011",
     "decades":"present",

@@ -104,6 +104,7 @@ div #legend ul li{
   clear: both;
   float: left;
   cursor: pointer;
+  margin-bottom: 6px;
 }
 
       .axis path,
@@ -118,7 +119,14 @@ div #legend ul li{
    display: none;
 }
 
+#kanter{
+  clear: both;
+  margin-bottom: 10px;
+}
 
+#info{
+  clear: both;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
