@@ -9,7 +9,7 @@
     padding = 0;
 
     var rMin = 4,
-    rMax = 52;	
+    rMax = 48;	
 
     var svg = d3.select("#viz").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -60,10 +60,10 @@
         color: color(currentIndex.gender),
         price: addDollar(currentIndex.price),
         detail: currentIndex.detail,
-        context: currentIndex.context,
         age: currentIndex.age,
         date: currentIndex.date,
         gender: currentIndex.gender,
+        decades: currentIndex.decades,
         cx: width / 2,
         cy: height / 2
 
@@ -77,13 +77,23 @@
 
   function makeBubble(nodes){
 
+    var arrayGender = [["both",120], ["female", 320], ["male", 550]],
+    arrayDate = [["not specified", 40], ["-500 - 0", 145], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
+    arrayAge = [["baby", 30], ["child", 155],["adult", 345],["not specified", 610]];
+
         var xG = d3.scale.ordinal()
-          .domain(data.map(function(d) { return d.gender; }))
-          .range([120, 320, 550]);
+          .domain([arrayGender[0][0], arrayGender[1][0], arrayGender[2][0]])
+          .range([arrayGender[0][1], arrayGender[1][1], arrayGender[2][1]]);
+
 
           var xA = d3.scale.ordinal()
-          .domain(data.map(function(d) { return d.age; }))
-          .range([20, 180, 360, 630]);
+          .domain([arrayAge[0][0], arrayAge[1][0], arrayAge[2][0], arrayAge[3][0]])
+          .range([arrayAge[0][1], arrayAge[1][1], arrayAge[2][1], arrayAge[3][1]]);
+
+
+          var xD = d3.scale.ordinal()
+          .domain([arrayDate[0][0], arrayDate[1][0], arrayDate[2][0], arrayDate[3][0], arrayDate[4][0]])
+          .range([arrayDate[0][1], arrayDate[1][1], arrayDate[2][1], arrayDate[3][1], arrayDate[4][1]]);
 
 
       var xAxisG = d3.svg.axis()
@@ -96,14 +106,10 @@
       .orient("bottom")
       .ticks(5);
 
-    // var force = d3.layout.force()
-    // .stop()
-    // .nodes(nodes)
-    // .size([width, height])
-    // .gravity(0)
-    // .charge(-10)
-    // .on("tick", tick)
-    // .start();
+      var xAxisD = d3.svg.axis()
+      .scale(xD)
+      .orient("bottom")
+      .ticks(5);
 
     var force = forceNodes(nodes);
 
@@ -119,7 +125,7 @@
 
 
     svg.append("g")
-      .data(nodes)
+      // .data(currentPicked)
       .attr("class", "x axis axisGender")
       .attr("transform", "translate(0, 280)")
       // .attr("transform", "translate(0," + height + ")")
@@ -127,11 +133,19 @@
       // .append("text")
 
       svg.append("g")
-      .data(nodes)
+      // .data(nodes)
       .attr("class", "x axis axisAge")
       .attr("transform", "translate(0, 280)")
       // .attr("transform", "translate(0," + height + ")")
       .call(xAxisA);
+      // .append("text")
+
+svg.append("g")
+      // .data(nodes)
+      .attr("class", "x axis axisDate")
+      .attr("transform", "translate(0, 280)")
+      // .attr("transform", "translate(0," + height + ")")
+      .call(xAxisD);
       // .append("text")
 
     function tick(e) {
@@ -147,6 +161,7 @@
       .stop()
       .nodes(nodes)
       .size([width, height])
+      .friction(0.8)
       .gravity(0)
       .charge(-10)
       .on("tick", tick)
@@ -154,9 +169,11 @@
     }
 
 
+
   $( "#sort" ).on( "click", function() {
           $('.axisGender').hide();
       $('.axisAge').hide();
+       $('.axisDate').hide();
     for(var i = 0; i < nodes.length; i++){
       nodes[i].cx = 330;
     }
@@ -165,18 +182,19 @@
   });
 
     $( "#sort_age" ).on( "click", function() {
-      $('.axisGender').hide();
-      $('.axisAge').show();
+        $('.axisGender').hide();
+        $('.axisAge').show();
+        $('.axisDate').hide();
 
     for(var i = 0; i < nodes.length; i++){
       if (nodes[i].age === 'baby'){
-        nodes[i].cx = 20;
+        nodes[i].cx = arrayAge[0][1];
       } else if (nodes[i].age === 'child'){
-        nodes[i].cx = 180;
+        nodes[i].cx = arrayAge[1][1];
       }else if (nodes[i].age === 'adult'){
-        nodes[i].cx = 360;
+        nodes[i].cx = arrayAge[2][1];
       }else if (nodes[i].age === 'ns'){
-        nodes[i].cx = 630;
+        nodes[i].cx = arrayAge[3][1];
       }
     }
    var force = forceNodes(nodes);
@@ -184,17 +202,50 @@
       circle.call(force.drag);
   });
 
+
+
+
+
     $( "#sort_gender" ).on( "click", function() {
             $('.axisGender').show();
       $('.axisAge').hide();
+       $('.axisDate').hide();
      
     for(var i = 0; i < nodes.length; i++){
       if (nodes[i].gender === 'both'){
-        nodes[i].cx = 120;
+        nodes[i].cx = arrayGender[0][1];
       } else if (nodes[i].gender === 'female'){
-        nodes[i].cx = 320;
+        nodes[i].cx = arrayGender[1][1];
       }else if (nodes[i].gender === 'male'){
-        nodes[i].cx = 550;
+        nodes[i].cx = arrayGender[2][1];
+      }
+    }
+   var force = forceNodes(nodes);
+
+      circle.call(force.drag);
+  });
+
+
+    // var arrayGender = [["both",120], ["female", 320], ["male", 550]],
+    // arrayDate = [["not specified", 40], ["-500 - 0", 140], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
+    // arrayAge = [["baby", 20], ["child", 180],["adult", 360],["not specified", 630]];
+
+      $( "#sort_date" ).on( "click", function() {
+            $('.axisGender').hide();
+      $('.axisAge').hide();
+      $('.axisDate').show();
+     
+    for(var i = 0; i < nodes.length; i++){
+      if (nodes[i].decades === 'ns'){
+        nodes[i].cx = arrayDate[0][1];
+      } else if (nodes[i].decades === 'bce'){
+        nodes[i].cx = arrayDate[1][1];
+      } else if (nodes[i].decades === 'early_modern'){
+        nodes[i].cx = arrayDate[2][1];
+      }else if (nodes[i].decades === 'eighteen'){
+        nodes[i].cx = arrayDate[3][1];
+      }else if (nodes[i].decades === 'present'){
+        nodes[i].cx = arrayDate[4][1];
       }
     }
    var force = forceNodes(nodes);
@@ -253,9 +304,7 @@ function goOver(nodes){
             .select("#value")
             .text(d.price);
             d3.select("#detail")
-            .text(d.detail);  
-            d3.select("#context")
-            .text(d.context);    
+            .text(d.detail);    
             d3.select("#age")
             .text(d.age); 
             d3.select("#date")

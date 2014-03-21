@@ -1,7 +1,8 @@
 [
   {
     "price":4480,
-    "detail":"slave - very young child, Ancient Egypt",
+    "detail":"slave (very young child)",
+    "context":"Ancient Egypt",
     "region":"africa",
     "date":"-500",
     "decades":"bce",
@@ -10,7 +11,8 @@
   },
   {
     "price":20480,
-    "detail":"slave - 8 years old, Ancient Egypt ",
+    "detail":"slave (8 years old)",
+    "context":"Ancient Egypt",
     "region":"africa",
     "date":"-500",
     "decades":"bce",
@@ -19,7 +21,8 @@
   },
   {
     "price":32000,
-    "detail":"slave, Ancient Egypt",
+    "detail":"slave",
+    "context":"Ancient Egypt",
     "region":"africa",
     "date":"-500",
     "decades":"bce",
@@ -28,7 +31,8 @@
   },
   {
     "price":2080,
-    "detail":"Gladiator, Ancient Rome ",
+    "detail":"Gladiator",
+    "context":"Ancient Rome",
     "region":"africa",
     "date":"0",
     "decades":"bce",
@@ -37,7 +41,8 @@
   },
   {
     "price":6000,
-    "detail":"slave, Ancient Rome",
+    "detail":"slave",
+    "context":"Ancient Rome",
     "region":"africa",
     "date":"0",
     "decades":"bce",
@@ -46,7 +51,8 @@
   },
   {
     "price":12000,
-    "detail":"slave, Ancient Rome",
+    "detail":"slave",
+    "context":"Ancient Rome",
     "region":"africa",
     "date":"0",
     "decades":"bce",
@@ -55,7 +61,8 @@
   },
   {
     "price":24000,
-    "detail":"slave, Ancient Rome",
+    "detail":"slave",
+    "context":"Ancient Rome",
     "region":"africa",
     "date":"0",
     "decades":"bce",
@@ -64,7 +71,8 @@
   },
   {
     "price":1200,
-    "detail":"Afghanistan Civilian death - Australian Military",
+    "detail":"Afghanistan Civilian death (Australian Military)",
+    "context":"Australian Military",
     "region":"oceania",
     "date":"2011-2013",
     "decades":"present",
@@ -73,7 +81,8 @@
   },
   {
     "price":1300,
-    "detail":"Male Irish Slave, Caribbean",
+    "detail":"Male Irish Slave",
+    "context":"Caribbean",
     "region":"caribbean",
     "date":"1650",
     "decades":"early_modern",
@@ -82,7 +91,8 @@
   },
   {
     "price":9000,
-    "detail":"Female African Slave - child, Caribbean",
+    "detail":"Female African girl slave",
+    "context":"Caribbean",
     "region":"caribbean",
     "date":"1650",
     "decades":"early_modern",
@@ -91,7 +101,8 @@
   },
   {
     "price":9500,
-    "detail":"Male African slave - child, Caribbean",
+    "detail":"Male African boy slave",
+    "context":"Caribbean",
     "region":"caribbean",
     "date":"1650",
     "decades":"early_modern",
@@ -100,7 +111,8 @@
   },
   {
     "price":10000,
-    "detail":"African Slave, Caribbean",
+    "detail":"African Slave",
+    "context":"Caribbean",
     "region":"caribbean",
     "date":"1650",
     "decades":"early_modern",
@@ -109,7 +121,8 @@
   },
   {
     "price":10300,
-    "detail":"African Female slave, Caribbean",
+    "detail":"African Female slave",
+    "context":"Caribbean",
     "region":"caribbean",
     "date":"1650",
     "decades":"early_modern",
@@ -118,16 +131,18 @@
   },
   {
     "price":880,
-    "detail":"Blood money in Saudi Arabia, for female Athiest or other religeon",
+    "detail":"Atheist (or other religion)",
+    "context":"Saudi Arabia blood money",
     "region":"middle_east",
-    "date":"Not Specified",
+    "date":"saudi",
     "decades":"ns",
     "gender":"female",
     "age":"ns"
   },
   {
     "price":1750,
-    "detail":"Blood money in Saudi Arabia, for male Athiest or other religeon",
+    "detail":"Atheist (or other religion)",
+    "context":"Saudi Arabia blood money",
     "region":"middle_east",
     "date":"saudi",
     "decades":"ns",
@@ -136,7 +151,8 @@
   },
   {
     "price":8800,
-    "detail":"Blood money in Saudi Arabia, for female Christian or Jew",
+    "detail":"Christian or Jew",
+    "context":"Saudi Arabia blood money",
     "region":"middle_east",
     "date":"saudi",
     "decades":"ns",
@@ -145,7 +161,8 @@
   },
   {
     "price":13500,
-    "detail":"Blood money in Saudi Arabia, for female Muslim",
+    "detail":"Muslim",
+    "context":"Saudi Arabia blood money",
     "region":"middle_east",
     "date":"saudi",
     "decades":"ns",
@@ -154,7 +171,8 @@
   },
   {
     "price":13500,
-    "detail":"Blood money in Saudi Arabia, for male Christian or Jew",
+    "detail":"Christian or Jew",
+    "context":"Saudi Arabia blood money",
     "region":"middle_east",
     "date":"saudi",
     "decades":"ns",
@@ -163,7 +181,8 @@
   },
   {
     "price":27000,
-    "detail":"Blood money in Saudi Arabia, for male Muslim",
+    "detail":"Muslim",
+    "context":"Saudi Arabia blood money",
     "region":"middle_east",
     "date":"saudi",
     "decades":"ns",
@@ -172,7 +191,8 @@
   },
   {
     "price":2000,
-    "detail":"Afghanistan Civilian death (on average) - UK Military",
+    "detail":"Afghanistan Civilian death (average)",
+    "context":"UK Military",
     "region":"europe",
     "date":"2011-2013",
     "decades":"present",
@@ -181,7 +201,8 @@
   },
   {
     "price":8000,
-    "detail":"Afghanistan Civilian death (highest paid) - UK Military",
+    "detail":"Afghanistan Civilian death (highest paid)",
+    "context":"UK Military",
     "region":"europe",
     "date":"2011-2013",
     "decades":"present",
@@ -190,7 +211,8 @@
   },
   {
     "price":38000,
-    "detail":"UK Military Personnel - UK Military",
+    "detail":"UK Military Personnel",
+    "context":"UK Military",
     "region":"europe",
     "date":"2011-2013",
     "decades":"present",
@@ -199,7 +221,8 @@
   },
   {
     "price":4000,
-    "detail":"Black male slave - 60 year old, United States",
+    "detail":"60 year old, black male slave",
+    "context":"US",
     "region":"americas",
     "date":"1850",
     "decades":"eighteen",
@@ -208,16 +231,18 @@
   },
   {
     "price":8100,
-    "detail":"Black male slave - 10 year old, United States",
+    "detail":"10 year old, black male slave",
+    "context":"US",
     "region":"americas",
     "date":"1850",
     "decades":"eighteen",
     "gender":"male",
-    "age":"child"
+    "age":"adult"
   },
   {
     "price":11000,
-    "detail":"Black male slave - 40 & 20 year old, United States",
+    "detail":"40 & 20 year old, black male slave",
+    "context":"US",
     "region":"americas",
     "date":"1850",
     "decades":"eighteen",
@@ -226,7 +251,8 @@
   },
   {
     "price":19000,
-    "detail":"Black male slave - 35 year old, United States",
+    "detail":"35 year old, black male slave",
+    "context":"US",
     "region":"americas",
     "date":"1850",
     "decades":"eighteen",
@@ -235,7 +261,8 @@
   },
   {
     "price":22000,
-    "detail":"Black male slave - 25 year old, United States",
+    "detail":"25 year old, black male slave",
+    "context":"US",
     "region":"americas",
     "date":"1850",
     "decades":"eighteen",
@@ -244,7 +271,8 @@
   },
   {
     "price":30000,
-    "detail":"Prime Male Slave - New Orleans, United States",
+    "detail":"Prime Male Slave (New Orleans)",
+    "context":"US",
     "region":"americas",
     "date":"1855",
     "decades":"eighteen",
@@ -253,7 +281,8 @@
   },
   {
     "price":100000,
-    "detail":"US Military Personnel - United States military",
+    "detail":"US Military Personnel",
+    "context":"US Military",
     "region":"americas",
     "date":"2011-2013",
     "decades":"present",
@@ -262,7 +291,8 @@
   },
   {
     "price":6400,
-    "detail":"Baby - Nigeria",
+    "detail":"Baby from Nigeria",
+    "context":"Nigeria",
     "region":"africa",
     "date":"2011",
     "decades":"present",
@@ -271,7 +301,8 @@
   },
   {
     "price":7800,
-    "detail":"Male Baby - China",
+    "detail":"Male Baby in China",
+    "context":"China",
     "region":"asia",
     "date":"2012",
     "decades":"present",
@@ -280,7 +311,8 @@
   },
   {
     "price":4732,
-    "detail":"Female Baby - China",
+    "detail":"Female Baby in China",
+    "context":"China",
     "region":"asia",
     "date":"2011",
     "decades":"present",
@@ -289,7 +321,8 @@
   },
   {
     "price":17500,
-    "detail":"Baby - North Caucasus, Russia",
+    "detail":"Baby in North Caucasus, Russia",
+    "context":"Russia",
     "region":"europe",
     "date":"2012",
     "decades":"present",
@@ -298,7 +331,8 @@
   },
   {
     "price":45000,
-    "detail":"Trafficked person - Cambodia",
+    "detail":"Trafficked person in Cambodia",
+    "context":"Cambodia",
     "region":"asia",
     "date":"2013",
     "decades":"present",
@@ -307,7 +341,8 @@
   },
   {
     "price":45000,
-    "detail":"Trafficked person - Thailand",
+    "detail":"Trafficked person in Thailand",
+    "context":"Thailand",
     "region":"asia",
     "date":"2013",
     "decades":"present",
@@ -316,7 +351,8 @@
   },
   {
     "price":45,
-    "detail":"Child for sex work -  India",
+    "detail":"Child, India (for labour, sex work)",
+    "context":"India",
     "region":"asia",
     "date":"2007",
     "decades":"present",
@@ -325,7 +361,8 @@
   },
   {
     "price":300,
-    "detail":"Child for international trafficking - Iraq (lowest price)",
+    "detail":"Child, Iraq (lowest)",
+    "context":"Iraq, international trafficking",
     "region":"middle_east",
     "date":"2009",
     "decades":"present",
@@ -334,7 +371,8 @@
   },
   {
     "price":5500,
-    "detail":"Child for international trafficking - Iraq (highest price)",
+    "detail":"Child, Iraq (highest)",
+    "context":"Iraq, international trafficking",
     "region":"middle_east",
     "date":"2009",
     "decades":"present",
@@ -343,7 +381,8 @@
   },
   {
     "price":600,
-    "detail":"Child soldier - Mali",
+    "detail":"Child soldier, Mali",
+    "context":"Mali ",
     "region":"africa",
     "date":"2012",
     "decades":"present",
@@ -352,7 +391,8 @@
   },
   {
     "price":25000,
-    "detail":"Child - UK",
+    "detail":"Child, UK",
+    "context":"UK",
     "region":"europe",
     "date":"2011",
     "decades":"present",
@@ -361,7 +401,8 @@
   },
   {
     "price":6000,
-    "detail":"Romanian girl sold into prostitution, Western Europe maximum - Romania",
+    "detail":"Romanian girl sold into prostitution, Western Europe maximum",
+    "context":"Romania",
     "region":"europe",
     "date":"2010",
     "decades":"present",
@@ -371,6 +412,7 @@
   {
     "price":1000,
     "detail":"Trafficked Haitian immigrants sold in Chile",
+    "context":"Chile",
     "region":"americas",
     "date":"2013",
     "decades":"present",
@@ -380,6 +422,7 @@
   {
     "price":7300,
     "detail":"Bride to China, purchased from Myanmar",
+    "context":"China",
     "region":"asia",
     "date":"2010",
     "decades":"present",
@@ -388,7 +431,8 @@
   },
   {
     "price":40000,
-    "detail":"Nigerian woman in Italy to be released by pimp(minimum amount)",
+    "detail":"Nigerian woman, Italy",
+    "context":"Nigeria, Italy",
     "region":"europe",
     "date":"2012",
     "decades":"present",
@@ -397,7 +441,8 @@
   },
   {
     "price":78000,
-    "detail":"Nigerian woman in Italy to be released by pimp(maximum amount)",
+    "detail":"Nigerian woman, Italy",
+    "context":"Nigeria, Italy",
     "region":"europe",
     "date":"2012",
     "decades":"present",
@@ -406,7 +451,8 @@
   },
   {
     "price":1066,
-    "detail":"Woman in her 20s - North Korea",
+    "detail":"Woman, 20s (N Korea)",
+    "context":"North Korea",
     "region":"asia",
     "date":"2011",
     "decades":"present",
@@ -415,7 +461,8 @@
   },
   {
     "price":761,
-    "detail":"Woman in her 30s - North Korea",
+    "detail":"Woman, 30s (N Korea)",
+    "context":"North Korea",
     "region":"asia",
     "date":"2011",
     "decades":"present",
@@ -424,7 +471,8 @@
   },
   {
     "price":457,
-    "detail":"Woman in her 40s - North Korea",
+    "detail":"Woman, 40s (N Korea)",
+    "context":"North Korea",
     "region":"asia",
     "date":"2011",
     "decades":"present",
@@ -434,6 +482,7 @@
   {
     "price":46,
     "detail":"Burmese child soldier",
+    "context":"Burma",
     "region":"asia",
     "date":"2004",
     "decades":"present",
@@ -442,7 +491,8 @@
   },
   {
     "price":78,
-    "detail":"forced labour in illegal brickyards - China",
+    "detail":"forced labour in illegal brickyards",
+    "context":"China",
     "region":"asia",
     "date":"2011",
     "decades":"present",
@@ -451,7 +501,8 @@
   },
   {
     "price":200,
-    "detail":"temporary \"pleasure marriage\" to a Syrian refugee - Syria",
+    "detail":"temporary \"pleasure marriage\" to a Syrian refugee",
+    "context":"Syria",
     "region":"middle_east",
     "date":"2012",
     "decades":"present",
@@ -460,7 +511,8 @@
   },
   {
     "price":110,
-    "detail":"cost of freedom from forced cotton labour - Uzbekistan",
+    "detail":"cost of FREEDOM from forced cotton labour",
+    "context":"Uzbekistan",
     "region":"asia",
     "date":"2012",
     "decades":"present",

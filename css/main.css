@@ -20,10 +20,12 @@ html, body{
 	width:960px;
 	height: 1000px;
 	background: #FFFFFF;
+  position: relative;
 }
 
 svg{
   border:solid pink;
+
 }
 
 .bubbles{
@@ -112,7 +114,7 @@ div #legend ul li{
       shape-rendering: crispEdges;
       }
 
-.axisAge, .axisGender{
+.axisAge, .axisGender, .axisDate{
    display: none;
 }
 
