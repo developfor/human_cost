@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Droid Sans';
+  font-family: 'DroidSans';
   font-weight: normal;
   src: url(../fonts/DroidSans.ttf); 
 }
 
 @font-face {
-  font-family: 'Droid Sans';
+  font-family: 'DroidSans-Bold';
   font-weight: bold;
   src: url(../fonts/DroidSans-Bold.ttf); 
 }
 
 html, body{
-	font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
+	font-family: 'DroidSans', Arial, Helvetica, sans-serif;
 	/*background: #F5F5F5;*/
   background: #EEE;
 }
@@ -57,7 +57,7 @@ svg{
   opacity:1;
   filter: alpha(opacity=1);
   pointer-events: none;
-  height: 75px;
+  height: 95px;
   width: 530px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -68,6 +68,7 @@ svg{
 
   margin-top: 10px;
   margin-left: 10px;
+  margin-bottom: 10px;
 
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
@@ -88,11 +89,20 @@ svg{
 }
 
 #tooltip p {
-  margin: 0;
-  font-family: sans-serif;
+  font-family: 'DroidSans', Arial, Helvetica, sans-serif;
   font-size: 13px;
-  line-height: 15px;
+  line-height: 17px;
   color: black;
+    margin-left: 10px;
+}
+
+#tooltip p:first-child {
+  margin-top: 5px;
+
+}
+#tooltip p strong{
+  font-weight: bold;
+  font-size: 15px;
 }
 
 div #legend ul{
