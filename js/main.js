@@ -253,8 +253,8 @@ function goOver(nodes){
 
     //Update the tooltip position and value
     d3.select("#tooltip")
-     .style("left", pad.left + "px")
-    .style("top", pad.top + "px")    
+    //  .style("left", pad.left + "px") //this is where the padding is changed
+    // .style("top", pad.top + "px")    
     .select("#value")
     .text(numberWithCommas(d.price));
     d3.select("#detail")
