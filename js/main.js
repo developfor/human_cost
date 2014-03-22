@@ -23,7 +23,7 @@
       return d3.scale.ordinal()
       .domain(["male", "female", "female & male"])
       // .range(["#97BF3F", "#FF4500", "#F8D6A9"]);
-      .range([ "#205081", "#24A6E8","#3B7FC4"]);
+      .range([ "#4A99AB", "#24A6E8","#3B7FC4"]);
 
     }
 
