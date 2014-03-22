@@ -19,22 +19,22 @@ html, body{
 .wrapper{
 	margin: 0 auto;
 	width:960px;
-	height: 1000px;
 	background: #EEE;
   position: relative;
+  margin-top: 20px;
 }
 
 .title{
   width: 400px;
   margin: 10px 0;
   padding: 5px 0;
-     -webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-border: 2px solid #C9C9C9;
-background-color: #FFF;
-float: left;
-height: 75px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #C9C9C9;
+  background-color: #FFF;
+  float: left;
+  height: 75px;
 }
 svg{
   /*border:solid pink;*/
@@ -57,19 +57,19 @@ svg{
   opacity:1;
   filter: alpha(opacity=1);
   pointer-events: none;
-height: 75px;
-width: 530px;
+  height: 75px;
+  width: 530px;
   -webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-border: 2px solid #C9C9C9;
-background-color: #FFFFFF;
-float: left;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #C9C9C9;
+  background-color: #FFFFFF;
+  float: left;
 
-margin-top: 10px;
-margin-left: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 
- -webkit-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
   -ms-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -80,7 +80,7 @@ margin-left: 10px;
 #tooltip.hidden {
   /*display: none;*/
   opacity: 0;
-   -webkit-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
   -ms-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -105,40 +105,41 @@ div #legend ul{
 .social{
   clear: both;
   border:2px solid #292B25;
-    -webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-border: 2px solid #C9C9C9;
-background-color: #FFFFFF;
-float: left;
-width: 90px;
-height: 60px;
-padding: 10px;
-margin: 10px 0;
-margin-right: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #C9C9C9;
+  background-color: #FFFFFF;
+  float: left;
+  width: 90px;
+  height: 60px;
+  padding: 10px;
+  margin: 10px 0;
+  margin-right: 10px;
 }
 
 .legend{
   border:2px solid #292B25;
-    -webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-border: 2px solid #C9C9C9;
-background-color: #FFFFFF;
-float: left;
-width: 580px;
-height: 60px;
-padding: 10px;
-margin: 10px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #C9C9C9;
+  background-color: #FFFFFF;
+  float: left;
+  width: 455px;
+  height: 60px;
+  padding: 10px;
+  margin: 10px 0;
+
 }
 
 div .legend ul li{
   height: 40px;
   width: 40px;
-    -webkit-border-radius: 40px;
--moz-border-radius: 40px;
-border-radius: 40px;
-  
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+
   display: inline-block;
   font-size: 10px;
   float: left;
@@ -175,33 +176,49 @@ div .legend h1{
   width: 670px;
   height: 320px;
   float: left;
-   /*border:2px solid #292B25;*/
-   -webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-border: 2px solid #C9C9C9;
-background-color: #FFF;
+  /*border:2px solid #292B25;*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #C9C9C9;
+  background-color: #FFF;
 }
 
 #buttons{
-width: 270px;
-height: 320px;
-float: left;
- border:2px solid #292B25;
-    -webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-border: 2px solid #C9C9C9;
-background-color: #FFF;
-margin-right: 10px;
-clear: both;
+  width: 270px;
+  height: 320px;
+  float: left;
+  border:2px solid #292B25;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #C9C9C9;
+  background-color: #FFF;
+  margin-right: 10px;
+  clear: both;
 }
 
 #buttons h1{
   cursor: pointer;
-  margin-bottom: 6px;
-  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+   margin-top: 10px;
+
+  height: 45px;
+  width: 220px;
   font-size: 20px;
+
+
+  background-color: white;
+  text-align: center;
+  /*margin: 15px;*/
+  line-height: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-color: #E6E6E6;
 }
 
 .axis path,
@@ -214,19 +231,18 @@ clear: both;
 }
 
 #kanter{
-  /*clear: both;*/
-  /*float: left;*/
-  margin-bottom: 10px;
-  width: 470px;
-height: 60px;
-float: left;
- border:2px solid #292B25;
-    -webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-border: 2px solid #C9C9C9;
-background-color: #FFF;
-margin-right: 10px;
+  border:2px solid #292B25;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #C9C9C9;
+  background-color: #FFFFFF;
+  float: left;
+  width: 320px;
+  height: 60px;
+  padding: 10px;
+  margin: 10px 0;
+  margin-right: 10px;
 }
 
 #info{

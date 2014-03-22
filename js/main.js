@@ -22,7 +22,7 @@
 
       return d3.scale.ordinal()
       .domain(["male", "female", "female & male"])
-      .range(["#97BF3F", "#F2ECD8", "#FF4500"]);
+      .range(["#97BF3F", "#FF4500", "#F8D6A9"]);
     }
 
     function addDollar(data){
