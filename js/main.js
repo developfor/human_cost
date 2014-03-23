@@ -295,14 +295,13 @@
         d3.select("#tooltip").classed("hidden", false);
         
         d3.select(this)
-        .style("stroke-width", '3')
-        .style("stroke", "#575757");
+        .style("stroke-width", '4');
+
       })
       .on("mouseout", function() {
         d3.select("#tooltip").classed("hidden", true);
         d3.select(this)
-        .style("stroke-width", "1.5")
-        .style("stroke", function(d){ return d.colorStroke; });
+        .style("stroke-width", "1.5");
       });
     }
 
