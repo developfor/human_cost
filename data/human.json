@@ -6,11 +6,11 @@
     "date":"-500",
     "decades":"bce",
     "gender":"female & male",
-    "age":"baby"
+    "age":"child"
   },
   {
     "price":20480,
-    "detail":"Slave - 8 years old, Ancient Egypt ",
+    "detail":"Slave - 8 years old child, Ancient Egypt",
     "region":"africa",
     "date":"-500",
     "decades":"bce",
@@ -28,7 +28,7 @@
   },
   {
     "price":2080,
-    "detail":"Gladiator, Ancient Rome ",
+    "detail":"Gladiator, Ancient Rome",
     "region":"africa",
     "date":"0",
     "decades":"bce",
@@ -118,7 +118,7 @@
   },
   {
     "price":880,
-    "detail":"Blood money in Saudi Arabia, for female Atheist or other religion",
+    "detail":"Blood money in Saudi Arabia - for female Atheist or other religion",
     "region":"middle_east",
     "date":"unstated",
     "decades":"unstated",
@@ -127,7 +127,7 @@
   },
   {
     "price":1750,
-    "detail":"Blood money in Saudi Arabia, for male Atheist or other religion",
+    "detail":"Blood money in Saudi Arabia, - male Atheist or other religion",
     "region":"middle_east",
     "date":"unstated",
     "decades":"unstated",
@@ -136,7 +136,7 @@
   },
   {
     "price":8800,
-    "detail":"Blood money in Saudi Arabia, for female Christian or Jew",
+    "detail":"Blood money in Saudi Arabia, - female Christian or Jew",
     "region":"middle_east",
     "date":"unstated",
     "decades":"unstated",
@@ -145,7 +145,7 @@
   },
   {
     "price":13500,
-    "detail":"Blood money in Saudi Arabia, for female Muslim",
+    "detail":"Blood money in Saudi Arabia, - female Muslim",
     "region":"middle_east",
     "date":"unstated",
     "decades":"unstated",
@@ -154,7 +154,7 @@
   },
   {
     "price":13500,
-    "detail":"Blood money in Saudi Arabia, for male Christian or Jew",
+    "detail":"Blood money in Saudi Arabia, - male Christian or Jew",
     "region":"middle_east",
     "date":"unstated",
     "decades":"unstated",
@@ -163,7 +163,7 @@
   },
   {
     "price":27000,
-    "detail":"Blood money in Saudi Arabia, for male Muslim",
+    "detail":"Blood money in Saudi Arabia, - male Muslim",
     "region":"middle_east",
     "date":"unstated",
     "decades":"unstated",

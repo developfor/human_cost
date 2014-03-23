@@ -88,7 +88,7 @@
     //arrays that hold the text and position for the axis
     var arrayGender = [["female & male",120], ["female", 320], ["male", 550]],
     arrayDate = [["unstated", 40], ["-500 - 0", 145], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
-    arrayAge = [["baby", 40], ["child", 155],["adult", 350],["unstated", 590]];
+    arrayAge = [["baby", 50], ["child", 155],["adult", 350],["unstated", 590]];
 
     // scale for the gender filter
     var xG = d3.scale.ordinal()
