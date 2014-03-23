@@ -10,7 +10,7 @@
   },
   {
     "price":20480,
-    "detail":"Slave - 8 years old child, Ancient Egypt",
+    "detail":"Slave - 8 year old child, Ancient Egypt",
     "region":"africa",
     "date":"-500",
     "decades":"bce",
@@ -195,7 +195,7 @@
     "date":"2011 - 2013",
     "decades":"present",
     "gender":"female & male",
-    "age":"unstated"
+    "age":"adult"
   },
   {
     "price":4000,
@@ -222,7 +222,7 @@
     "date":"1850",
     "decades":"eighteen",
     "gender":"male",
-    "age":"child"
+    "age":"adult"
   },
   {
     "price":19000,
@@ -244,7 +244,7 @@
   },
   {
     "price":30000,
-    "detail":"Prime Male Slave - New New Orleans, United States",
+    "detail":"Prime male slave - New Orleans, United States",
     "region":"americas",
     "date":"1855",
     "decades":"eighteen",
@@ -262,7 +262,7 @@
   },
   {
     "price":6400,
-    "detail":"Baby - Nigeria",
+    "detail":"Baby from Nigeria",
     "region":"africa",
     "date":"2011",
     "decades":"present",
@@ -271,7 +271,7 @@
   },
   {
     "price":7800,
-    "detail":"Male Baby - China",
+    "detail":"Male Baby in China",
     "region":"asia",
     "date":"2012",
     "decades":"present",
@@ -280,7 +280,7 @@
   },
   {
     "price":4732,
-    "detail":"Female Baby - China",
+    "detail":"Female Baby in China",
     "region":"asia",
     "date":"2011",
     "decades":"present",
@@ -289,7 +289,7 @@
   },
   {
     "price":17500,
-    "detail":"Baby - North Caucasus, Russia",
+    "detail":"Baby in North Caucasus, Russia",
     "region":"europe",
     "date":"2012",
     "decades":"present",
@@ -298,7 +298,7 @@
   },
   {
     "price":45000,
-    "detail":"Trafficked person - Cambodia",
+    "detail":"Trafficked person in Cambodia",
     "region":"asia",
     "date":"2013",
     "decades":"present",
@@ -307,7 +307,7 @@
   },
   {
     "price":45000,
-    "detail":"Trafficked person - Thailand",
+    "detail":"Trafficked person in Thailand",
     "region":"asia",
     "date":"2013",
     "decades":"present",
@@ -316,7 +316,7 @@
   },
   {
     "price":45,
-    "detail":"Child for sex work -  India",
+    "detail":"Child for labour or sex work -  India",
     "region":"asia",
     "date":"2007",
     "decades":"present",
@@ -347,7 +347,7 @@
     "region":"africa",
     "date":"2012",
     "decades":"present",
-    "gender":"female & male",
+    "gender":"male",
     "age":"child"
   },
   {
@@ -361,7 +361,7 @@
   },
   {
     "price":6000,
-    "detail":"Romanian girl sold into prostitution, Western Europe maximum amount",
+    "detail":"Romanian girl sold into prostitution, Western Europe(maximum)",
     "region":"europe",
     "date":"2010",
     "decades":"present",
@@ -388,7 +388,7 @@
   },
   {
     "price":40000,
-    "detail":"Nigerian woman in Italy to be released by pimp(minimum amount)",
+    "detail":"Nigerian woman in Italy - amount paid to be released by pimp(minimum)",
     "region":"europe",
     "date":"2012",
     "decades":"present",
@@ -397,7 +397,7 @@
   },
   {
     "price":78000,
-    "detail":"Nigerian woman in Italy to be released by pimp(maximum amount)",
+    "detail":"Nigerian woman in Italy - amount paid to be released by pimp(maximum)",
     "region":"europe",
     "date":"2012",
     "decades":"present",
@@ -451,7 +451,7 @@
   },
   {
     "price":200,
-    "detail":"Temporary \"pleasure marriage\" to a Syrian refugee - Syria",
+    "detail":"Temporary pleasure marriage to a Syrian refugee - Syria",
     "region":"middle_east",
     "date":"2012",
     "decades":"present",
