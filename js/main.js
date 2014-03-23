@@ -4,7 +4,7 @@
 
 		var margin = {top: 4, right: 5, bottom: 4, left: 5},
     pad = {top: 42, right: 12, bottom: 12, left: 4},
-    width = 670 - margin.left - margin.right,
+    width = 770 - margin.left - margin.right,
     height = 320 - margin.top - margin.bottom,
     padding = 0;
 
@@ -86,9 +86,9 @@
   function makeBubble(nodes){
 
     //arrays that hold the text and position for the axis
-    var arrayGender = [["female & male",120], ["female", 320], ["male", 550]],
-    arrayDate = [["unstated", 40], ["-500 - 0", 145], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
-    arrayAge = [["baby", 50], ["child", 155],["adult", 350],["unstated", 590]];
+    var arrayGender = [["female & male",100], ["female", 390], ["male", 650]],
+    arrayDate = [["unstated", 50], ["-500 - 0", 190], ["1650", 330],["1855", 470],["2004 - 2012", 650]],
+    arrayAge = [["baby", 40], ["child", 210],["adult", 430],["unstated", 675]];
 
     // scale for the gender filter
     var xG = d3.scale.ordinal()
@@ -183,7 +183,7 @@
         $('#sort').css('background-color', '#b3b2b2')
                   .css('color', 'white');
         for(var i = 0; i < nodes.length; i++){
-          nodes[i].cx = 330;
+          nodes[i].cx = 360;
         }
         var force = forceNodes(nodes);
         circle.call(force.drag);
