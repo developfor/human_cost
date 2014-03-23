@@ -18,15 +18,24 @@
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+    //the fill color by gender
     function colorScale(data){
-
       return d3.scale.ordinal()
       .domain(["male", "female", "female & male"])
-      .range(["#97BF3F", "#FF4500", "#F2ECD8"]);
-      // .range([ "#4A99AB", "#24A6E8","#3B7FC4"]);
-
+      .range(["#83a538", "#FF4500", "#f4e09c"]);
     }
 
+        //the stroke color by gender
+    function colorOutline(data){
+      return d3.scale.ordinal()
+      .domain(["male", "female", "female & male"])
+      .range(["#4c6021", "#741f00", "orange"]);
+      // .range([ "#4A99AB", "#24A6E8","#3B7FC4"]);
+    }
+
+
+
+    //adds a dollar sign before price data
     function addDollar(data){
       return "$" + data;
     }
@@ -43,11 +52,12 @@
   else {
 
     var color = colorScale(data);
+    var colorStroke = colorOutline(data);
 
     radius = radiusScale(data, 0.8);
 
     var index_num = 0;
-
+    //remaps the data so it can be used in the force layout
     var nodes = d3.range(data.length).map(function() {
 
       var currentIndex = data[index_num];
@@ -55,6 +65,7 @@
       return {
         radius: radius(currentIndex.price),
         color: color(currentIndex.gender),
+        colorStroke: colorStroke(currentIndex.gender),
         price: addDollar(currentIndex.price),
         detail: currentIndex.detail,
         age: currentIndex.age,
@@ -74,35 +85,37 @@
 
   function makeBubble(nodes){
 
+    //arrays that hold the text and position for the axis
     var arrayGender = [["female & male",120], ["female", 320], ["male", 550]],
     arrayDate = [["unstated", 40], ["-500 - 0", 145], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
     arrayAge = [["baby", 30], ["child", 155],["adult", 345],["unstated", 610]];
 
+    // scale for the gender filter
     var xG = d3.scale.ordinal()
     .domain([arrayGender[0][0], arrayGender[1][0], arrayGender[2][0]])
     .range([arrayGender[0][1], arrayGender[1][1], arrayGender[2][1]]);
 
-
+    // scale for the age filter
     var xA = d3.scale.ordinal()
     .domain([arrayAge[0][0], arrayAge[1][0], arrayAge[2][0], arrayAge[3][0]])
     .range([arrayAge[0][1], arrayAge[1][1], arrayAge[2][1], arrayAge[3][1]]);
 
-
+    // scale for the date filter
     var xD = d3.scale.ordinal()
     .domain([arrayDate[0][0], arrayDate[1][0], arrayDate[2][0], arrayDate[3][0], arrayDate[4][0]])
     .range([arrayDate[0][1], arrayDate[1][1], arrayDate[2][1], arrayDate[3][1], arrayDate[4][1]]);
 
-
+    // axis for the gender filter
     var xAxisG = d3.svg.axis()
     .scale(xG)
     .orient("bottom")
     .ticks(5);
-
+    //axis for the age filter
     var xAxisA = d3.svg.axis()
     .scale(xA)
     .orient("bottom")
     .ticks(5);
-
+    //axis fof the date fileter
     var xAxisD = d3.svg.axis()
     .scale(xD)
     .orient("bottom")
@@ -117,6 +130,7 @@
 
     circle.attr("r", function(d) {return d.radius; })
     .style("fill", function(d){ return d.color; })
+    .style("stroke", function(d){ return d.colorStroke; })
     .attr('class', 'bubbles')
     .call(force.drag);
 
@@ -291,14 +305,15 @@ function goOver(nodes){
     
     d3.select(this)
     .style("stroke-width", '4')
-    .style("stroke", "#292B25");
+    .style("stroke", "#575757");
 
   })
 .on("mouseout", function() {
 
   d3.select("#tooltip").classed("hidden", true);
   d3.select(this)
-  .style("stroke-width", "1.5");
+  .style("stroke-width", "2")
+  .style("stroke", function(d){ return d.colorStroke; });
   });
 }
 
