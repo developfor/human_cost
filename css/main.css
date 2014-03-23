@@ -34,8 +34,13 @@ html, body{
   border: 2px solid #C9C9C9;
   background-color: #FFF;
   float: left;
-  height: 75px;
+  height: 95px;
 }
+
+.title img{
+  margin-top: 14px;
+}
+
 svg{
   /*border:solid pink;*/
 
@@ -128,6 +133,12 @@ div #legend ul{
   margin-right: 10px;
 }
 
+.twit-share-button{
+  margin-top: 10px
+}
+.fb-share-button{
+  margin-top: 5px
+}
 .legend{
   border:2px solid #292B25;
   -webkit-border-radius: 5px;
@@ -136,16 +147,29 @@ div #legend ul{
   border: 2px solid #C9C9C9;
   background-color: #FFFFFF;
   float: left;
-  width: 455px;
+  width: 476px;
   height: 60px;
-  padding: 10px;
+  padding: 10px 0;
   margin: 10px 0;
 
 }
 
-div .legend ul li{
+.legend-block{
+  border:2px solid #292B25;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #C9C9C9;
+  background-color: #FFFFFF;
+  float: left;
+  width: 140px;
   height: 40px;
-  width: 40px;
+  margin-left: 10px;
+}
+
+div .legend ul li{
+  height: 35px;
+  width: 35px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
@@ -153,12 +177,15 @@ div .legend ul li{
   display: inline-block;
   font-size: 10px;
   float: left;
-  margin-right: 4px;
+
+  margin: 2px;
 
 }
 
 div .legend h1{
   clear: both;
+  font-size: 11px;
+  margin-left: 10px;
 }
 
 .legend_text{
@@ -193,6 +220,16 @@ div .legend h1{
   border: 2px solid #C9C9C9;
   background-color: #FFF;
 }
+
+/*.tick {
+  border:2px solid #292B25;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #C9C9C9;
+  background-color: #FFF;
+  margin-right: 10px;
+}*/
 
 #buttons{
   width: 270px;
@@ -231,6 +268,18 @@ div .legend h1{
   border-color: #E6E6E6;
 }
 
+#df-logo {
+  background-image: url('../images/df_logo.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100px;
+    width: 100px;
+  height: 26px;
+position: absolute;
+/*    left: 407px;
+  top: 25px;*/
+}
+
 .axis path,
 .axis line {
   fill: none;
@@ -253,6 +302,16 @@ div .legend h1{
   padding: 10px;
   margin: 10px 0;
   margin-right: 10px;
+}
+
+#kanter h1{
+  font-size: 18px;
+}
+#kanter a{
+font-size: 11px;
+color: #FF4500;
+text-decoration: none;
+
 }
 
 #info{

@@ -32,42 +32,67 @@
         		<p><strong>gender: </strong><span id="gender"></span></p>
       		</div>
 			<div id = "buttons">
-      			<h1 id = "sort">no filter</h1>
-				<h1 id = "sort_age">filter: age</h1>
-				<h1 id = "sort_gender">filter: gender</h1>
-				<h1 id = "sort_date">filter: date</h1>
+				<p>Sort by:</p>
+      			<h1 id = "sort">all</h1>
+				<h1 id = "sort_age">age</h1>
+				<h1 id = "sort_gender">gender</h1>
+				<h1 id = "sort_date">date</h1>
+				<a id="df-logo" href="http://developfor.com" target="blank"></a>
+
       		</div>
 
 			<div id = "viz"></div>
 
 			<div class = "social">
-facebook, twitter
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+				<div class= "fb-share-button">  
+					<div class="fb-like" data-href="http://developfor.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+				</div>
+
+				<div class= "twit-share-button">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://developfor.com" data-text="See how popular your birthday is on The Birth Ranking Calendar #dataviz" data-hashtags="birthranking">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				</div>
+
 			</div>
 
 
       		
 
 			<div id = "kanter">
-				<h1>Created for The Kantar Information is Beautiful Awards<h1>
-				<a href="http://bit.ly/human_costs#sthash.auiCv5Tj.dpuf">data provided by The Kantar Information is Beautiful Awards</a>
+				<h1>Created for The Kantar Information is Beautiful Awards.<h1>
+				<a href="http://bit.ly/human_costs#sthash.auiCv5Tj.dpuf">Data provided by The Kantar Information is Beautiful Awards.</a>
 			</div>
 			<div class = "legend">
-      			<!-- <p>Key: </p> -->
+      		
+      				
       			<ul>
+      				<div class="legend-block">
       				<li class = "legend_color3"></li>
       				<li class = "legend_text">Male and Female</li>
-      				
+      			</div>
+      				<div class="legend-block">
       				<li class = "legend_color2"></li>
       				<li class = "legend_text">Female</li>
-
+      				</div>
+				<div class="legend-block">
       				<li class = "legend_color1"></li>
       				<li class = "legend_text">Male</li>
+      			</div>
       			</ul>
       			<h1>All prices are inflation adjusted and in U.S. Dollars</h1>
       		</div>
 
 
-			<div id="info">
+		<!-- 	<div id="info">
 				<div id="info-dropdown">
 
 					<div id = "info-text">
@@ -89,7 +114,7 @@ facebook, twitter
 					</div>
 
 				</div>
-			</div>
+			</div> -->
 			
 		</div>
 
