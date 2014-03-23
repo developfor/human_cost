@@ -22,18 +22,18 @@
     function colorScale(data){
       return d3.scale.ordinal()
       .domain(["male", "female", "female & male"])
-      .range(["#83a538", "#FF4500", "#f4e09c"]);
+      // .range([ "#1941b4", "#24A6E8","#a4dcff"]);
+      .range(["#97BF3F", "#FF4500", "#f4e09c"]);
+      // .range([ "#4A99AB", "#24A6E8","#3B7FC4"]);
     }
 
         //the stroke color by gender
     function colorOutline(data){
       return d3.scale.ordinal()
       .domain(["male", "female", "female & male"])
-      .range(["#4c6021", "#741f00", "orange"]);
-      // .range([ "#4A99AB", "#24A6E8","#3B7FC4"]);
+      .range(["#4c6021", "#741f00", "#f79f05"]);
+      
     }
-
-
 
     //adds a dollar sign before price data
     function addDollar(data){
@@ -88,7 +88,7 @@
     //arrays that hold the text and position for the axis
     var arrayGender = [["female & male",120], ["female", 320], ["male", 550]],
     arrayDate = [["unstated", 40], ["-500 - 0", 145], ["1650", 250],["1855", 350],["2004 - 2012", 550]],
-    arrayAge = [["baby", 30], ["child", 155],["adult", 345],["unstated", 610]];
+    arrayAge = [["baby", 40], ["child", 155],["adult", 350],["unstated", 590]];
 
     // scale for the gender filter
     var xG = d3.scale.ordinal()
@@ -131,6 +131,7 @@
     circle.attr("r", function(d) {return d.radius; })
     .style("fill", function(d){ return d.color; })
     .style("stroke", function(d){ return d.colorStroke; })
+    // .style("stroke", "#835ae0")
     .attr('class', 'bubbles')
     .call(force.drag);
 
@@ -304,7 +305,7 @@ function goOver(nodes){
     d3.select("#tooltip").classed("hidden", false);
     
     d3.select(this)
-    .style("stroke-width", '4')
+    .style("stroke-width", '3')
     .style("stroke", "#575757");
 
   })
@@ -312,8 +313,9 @@ function goOver(nodes){
 
   d3.select("#tooltip").classed("hidden", true);
   d3.select(this)
-  .style("stroke-width", "2")
+  .style("stroke-width", "1.5")
   .style("stroke", function(d){ return d.colorStroke; });
+  // .style("stroke", "#835ae0")
   });
 }
 
