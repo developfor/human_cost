@@ -231,7 +231,7 @@ div .legend h1{
   margin-right: 10px;
 }*/
 
-#buttons{
+.buttons{
   width: 270px;
   height: 320px;
   float: left;
@@ -245,19 +245,18 @@ div .legend h1{
   clear: both;
 }
 
-#buttons h1{
+.buttons h1{
   cursor: pointer;
   margin: 0 auto;
   margin-bottom: 10px;
    margin-top: 10px;
-
-  height: 45px;
+  height: 38px;
   width: 220px;
   font-size: 20px;
-
-
   background-color: white;
+  color: black;
   text-align: center;
+  padding-top: 4px;
   /*margin: 15px;*/
   line-height: 30px;
   border-style: solid;
@@ -266,6 +265,12 @@ div .legend h1{
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-color: #E6E6E6;
+}
+
+
+#sort{
+  background-color:#b3b2b2;
+  color: white;
 }
 
 #df-logo {
@@ -317,3 +322,5 @@ text-decoration: none;
 #info{
   clear: both;
 }
+
+

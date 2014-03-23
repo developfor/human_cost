@@ -163,6 +163,10 @@
         $('.axisGender').hide();
         $('.axisAge').hide();
         $('.axisDate').hide();
+        $("#sort-age, #sort-gender, #sort-date").css("background-color", "white")
+                                                .css('color', "black");
+        $('#sort').css('background-color', '#b3b2b2')
+                  .css('color', 'white');
         for(var i = 0; i < nodes.length; i++){
           nodes[i].cx = 330;
         }
@@ -171,11 +175,16 @@
       });
 
       //sort bubbles by AGE
-      $( "#sort_age" ).on( "click", function() {
+      $( "#sort-age" ).on( "click", function() {
         
         $('.axisGender').hide();
         $('.axisDate').hide();
         $('.axisAge').show();
+
+        $("#sort, #sort-gender, #sort-date").css("background-color", "white")
+                                                .css('color', "black");
+        $('#sort-age').css('background-color', '#b3b2b2')
+                      .css('color', 'white');
 
         for(var i = 0; i < nodes.length; i++){
           if (nodes[i].age === 'baby'){
@@ -194,11 +203,16 @@
       });
 
       //sort bubbles by GENDER
-      $( "#sort_gender" ).on( "click", function() {
+      $( "#sort-gender" ).on( "click", function() {
         
         $('.axisAge').hide();
         $('.axisDate').hide();
         $('.axisGender').show();
+
+        $("#sort, #sort-age, #sort-date").css("background-color", "white")
+                                                .css('color', "black");
+        $('#sort-gender').css('background-color', '#b3b2b2')
+                      .css('color', 'white');
 
         for(var i = 0; i < nodes.length; i++){
           if (nodes[i].gender === 'female & male'){
@@ -215,10 +229,14 @@
       });
 
     //bubbles are sorted by DATE
-    $( "#sort_date" ).on( "click", function() {
+    $( "#sort-date" ).on( "click", function() {
       $('.axisGender').hide();
       $('.axisAge').hide();
       $('.axisDate').show();
+       $("#sort, #sort-age, #sort-gender").css("background-color", "white")
+                                                .css('color', "black");
+        $('#sort-date').css('background-color', '#b3b2b2')
+                      .css('color', 'white');
 
       for(var i = 0; i < nodes.length; i++){
         if (nodes[i].decades === 'unstated'){
