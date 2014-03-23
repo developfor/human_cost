@@ -52,7 +52,7 @@ svg{
   cursor: all-scroll;
 }
 
-#tooltip {
+#tooltip{
   /*position: absolute;*/
   float: left;
   width: auto;
@@ -84,7 +84,7 @@ svg{
 
 }
 
-#tooltip.hidden {
+#tooltip.hidden{
   /*display: none;*/
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -94,7 +94,7 @@ svg{
   transition: opacity 0.2s ease-in-out;
 }
 
-#tooltip p {
+#tooltip p{
   font-family: 'DroidSans', Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 17px;
@@ -102,12 +102,13 @@ svg{
   margin-left: 10px;
 }
 
-#tooltip p:first-child {
+#tooltip p:first-child{
   margin-top: 5px;
 
 }
+
 #tooltip p strong{
-  font-weight: bold;
+  /*font-weight: 800;*/
   font-size: 15px;
 }
 
@@ -189,31 +190,66 @@ div .legend h1{
 }
 
 .legend_text{
-  padding-top: 4px;
-  width: auto;
+font-size: 12px;
+margin-top: 13px;
+margin-left: 6px;
+float: left;
 }
 .legend_color1{
   width: 20px;
   background: #F4E09C;
+    height: 33px;
+  width: 33px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  float: left;
+  margin: 2px;
+  border: 2px solid #F79F05;
+
   /*  border:1px solid #292B25;*/
 }
 .legend_color2{
   width: 20px;
   background: #FF4500;
+
+  height: 33px;
+  width: 33px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  float: left;
+  margin: 2px;
+
+  border: 2px solid #741F00;
+
   /*border:2px solid #292B25;*/
 }
 
 .legend_color3{
   width: 20px;
   background: #97BF3F;
+
+  height: 33px;
+  width: 33px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  float: left;
+  margin: 2px;
   /*border:2px solid #292B25;*/
+    border: 2px solid #4C6021;
+
 }
 
 .legend h2{
   clear: both;
   margin-left: 12px;
   padding-top: 6px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 #viz{
