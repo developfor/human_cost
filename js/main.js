@@ -179,7 +179,7 @@
             $('.axisDate').hide();
             $("#sort-age, #sort-gender, #sort-date").css("background-color", "white")
             .css('color', "black");
-            $('#sort').css('background-color', '#b3b2b2')
+            $('#sort').css('background-color', '#C9C9C9')
             .css('color', 'white');
             for(var i = 0; i < nodes.length; i++){
               nodes[i].cx = 360;
@@ -197,7 +197,7 @@
 
             $("#sort, #sort-gender, #sort-date").css("background-color", "white")
             .css('color', "black");
-            $('#sort-age').css('background-color', '#b3b2b2')
+            $('#sort-age').css('background-color', '#C9C9C9')
             .css('color', 'white');
 
             for(var i = 0; i < nodes.length; i++){
@@ -225,7 +225,7 @@
 
             $("#sort, #sort-age, #sort-date").css("background-color", "white")
             .css('color', "black");
-            $('#sort-gender').css('background-color', '#b3b2b2')
+            $('#sort-gender').css('background-color', '#C9C9C9')
             .css('color', 'white');
 
             for(var i = 0; i < nodes.length; i++){
@@ -249,7 +249,7 @@
           $('.axisDate').show();
           $("#sort, #sort-age, #sort-gender").css("background-color", "white")
           .css('color', "black");
-          $('#sort-date').css('background-color', '#b3b2b2')
+          $('#sort-date').css('background-color', '#C9C9C9')
           .css('color', 'white');
 
           for(var i = 0; i < nodes.length; i++){

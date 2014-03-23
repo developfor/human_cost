@@ -11,15 +11,15 @@
 }
 
 html, body{
-	font-family: 'DroidSans', Arial, Helvetica, sans-serif;
-	/*background: #F5F5F5;*/
+  font-family: 'DroidSans', Arial, Helvetica, sans-serif;
+  /*background: #F5F5F5;*/
   background: #EEE;
 }
 
 .wrapper{
-	margin: 0 auto;
-	width:960px;
-	background: #EEE;
+  margin: 0 auto;
+  width:960px;
+  background: #EEE;
   position: relative;
   margin-top: 20px;
 }
@@ -47,9 +47,9 @@ svg{
 }
 
 .bubbles{
-/* stroke: #292B25;*/
- stroke-width: 1.5;
- cursor: all-scroll;
+  /* stroke: #292B25;*/
+  stroke-width: 1.5;
+  cursor: all-scroll;
 }
 
 #tooltip {
@@ -99,7 +99,7 @@ svg{
   font-size: 13px;
   line-height: 17px;
   color: black;
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 #tooltip p:first-child {
@@ -195,18 +195,18 @@ div .legend h1{
 .legend_color1{
   width: 20px;
   background: #F4E09C;
-/*  border:1px solid #292B25;*/
+  /*  border:1px solid #292B25;*/
 }
 .legend_color2{
- width: 20px;
- background: #FF4500;
- /*border:2px solid #292B25;*/
+  width: 20px;
+  background: #FF4500;
+  /*border:2px solid #292B25;*/
 }
 
 .legend_color3{
- width: 20px;
- background: #97BF3F;
- /*border:2px solid #292B25;*/
+  width: 20px;
+  background: #97BF3F;
+  /*border:2px solid #292B25;*/
 }
 
 .legend h2{
@@ -229,17 +229,17 @@ div .legend h1{
 }
 
 /*.tick {
-  border:2px solid #292B25;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 2px solid #C9C9C9;
-  background-color: #FFF;
-  margin-right: 10px;
+border:2px solid #292B25;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border: 2px solid #C9C9C9;
+background-color: #FFF;
+margin-right: 10px;
 }*/
 
 .buttons{
-  width: 270px;
+  width: 170px;
   height: 320px;
   float: left;
   border:2px solid #292B25;
@@ -256,9 +256,9 @@ div .legend h1{
   cursor: pointer;
   margin: 0 auto;
   margin-bottom: 10px;
-   margin-top: 10px;
+  margin-top: 10px;
   height: 38px;
-  width: 220px;
+  width: 120px;
   font-size: 20px;
   background-color: white;
   color: black;
@@ -273,10 +273,17 @@ div .legend h1{
   border-color: #E6E6E6;
 }
 
-
 #sort{
-  background-color:#b3b2b2;
+  background-color: #C9C9C9;
   color: white;
+}
+
+.buttons p{
+  font-size: 19px;
+  background: #C9C9C9;
+  padding: 10px;
+  color: #FFF;
+  padding-left: 10px;
 }
 
 #df-logo {
@@ -284,11 +291,11 @@ div .legend h1{
   background-repeat: no-repeat;
   background-position: left;
   background-size: 100px;
-    width: 100px;
+  width: 100px;
   height: 26px;
-position: absolute;
-/*    left: 407px;
-  top: 25px;*/
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .axis path,
@@ -297,7 +304,7 @@ position: absolute;
 }
 
 .axisAge, .axisGender, .axisDate{
- display: none;
+  display: none;
 }
 
 #kanter{
@@ -319,9 +326,9 @@ position: absolute;
   font-size: 18px;
 }
 #kanter a{
-font-size: 11px;
-color: #FF4500;
-text-decoration: none;
+  font-size: 11px;
+  color: #FF4500;
+  text-decoration: none;
 
 }
 
