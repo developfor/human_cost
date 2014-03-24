@@ -49,7 +49,13 @@ svg{
 .bubbles{
   /* stroke: #292B25;*/
   stroke-width: 1.5;
-  cursor: all-scroll;
+  cursor: pointer;
+}
+
+.bubbles:active{
+  /* stroke: #292B25;*/
+  stroke-width: 1.5;
+  cursor:  move;
 }
 
 #tooltip{
@@ -164,7 +170,7 @@ div #legend ul{
   border: 2px solid #C9C9C9;
   background-color: #FFFFFF;
   float: left;
-  width: 140px;
+  width: 141px;
   height: 40px;
   margin-left: 10px;
 }
@@ -309,6 +315,12 @@ margin-right: 10px;
   border-color: #E6E6E6;
 }
 
+.buttons h2{
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+
+}
 #sort{
   background-color: #C9C9C9;
   color: white;
@@ -323,15 +335,15 @@ margin-right: 10px;
 }
 
 #df-logo {
-  background-image: url('../images/df_logo.png');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 100px;
-  width: 100px;
-  height: 26px;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 10px;
+background-image: url('../images/df_logo.png');
+background-repeat: no-repeat;
+background-position: left;
+background-size: 80px;
+width: 80px;
+height: 23px;
+position: absolute;
+margin-left: 5px;
+margin-top: -6px;
 }
 
 .axis path,
